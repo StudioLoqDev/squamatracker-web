@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Politique de confidentialité – Squama Tracker</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Rajdhani:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --green: #00e5a0;
+      --green-dim: rgba(0, 229, 160, 0.12);
+      --green-border: rgba(0, 229, 160, 0.25);
+      --bg: #0a0f0d;
+      --surface: #0f1a14;
+      --text: #c8d8d0;
+      --text-dim: #6a8a7a;
+      --white: #e8f4ef;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Rajdhani', sans-serif;
+      font-weight: 400;
+      line-height: 1.8;
+      min-height: 100vh;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 60% 40% at 80% 10%, rgba(0,229,160,0.04) 0%, transparent 60%),
+        radial-gradient(ellipse 40% 60% at 10% 80%, rgba(0,229,160,0.03) 0%, transparent 60%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .container {
+      position: relative;
+      z-index: 1;
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 60px 24px 100px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 64px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid var(--green-border);
+    }
+
+    .logo-text {
+      font-family: 'Cinzel', serif;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.35em;
+      color: var(--green);
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      display: block;
+    }
+
+    h1 {
+      font-family: 'Cinzel', serif;
+      font-size: clamp(20px, 4vw, 30px);
+      font-weight: 400;
+      color: var(--white);
+      letter-spacing: 0.05em;
+      margin-bottom: 16px;
+    }
+
+    .meta {
+      font-size: 13px;
+      color: var(--text-dim);
+      letter-spacing: 0.06em;
+    }
+
+    .meta span { color: var(--green); }
+
+    section { margin-bottom: 52px; }
+
+    h2 {
+      font-family: 'Cinzel', serif;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--green);
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--green-border);
+    }
+
+    p {
+      font-size: 15px;
+      color: var(--text);
+      margin-bottom: 14px;
+    }
+
+    ul { list-style: none; margin-bottom: 14px; }
+
+    ul li {
+      font-size: 15px;
+      color: var(--text);
+      padding: 6px 0 6px 20px;
+      position: relative;
+    }
+
+    ul li::before {
+      content: '›';
+      position: absolute;
+      left: 0;
+      color: var(--green);
+      font-size: 18px;
+      line-height: 1.4;
+    }
+
+    .highlight-box {
+      background: var(--green-dim);
+      border: 1px solid var(--green-border);
+      border-left: 3px solid var(--green);
+      border-radius: 4px;
+      padding: 20px 24px;
+      margin: 20px 0;
+    }
+
+    .highlight-box p { margin-bottom: 0; font-size: 14px; }
+
+    a {
+      color: var(--green);
+      text-decoration: none;
+      border-bottom: 1px solid var(--green-border);
+      transition: border-color 0.2s;
+    }
+
+    a:hover { border-color: var(--green); }
+
+    footer {
+      margin-top: 80px;
+      padding-top: 32px;
+      border-top: 1px solid var(--green-border);
+      text-align: center;
+    }
+
+    footer p { font-size: 12px; color: var(--text-dim); letter-spacing: 0.08em; }
+    footer a { color: var(--green); font-size: 12px; }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-family: 'Cinzel', serif;
+      font-size: 11px;
+      letter-spacing: 0.2em;
+      color: var(--text-dim);
+      text-decoration: none;
+      border: none;
+      margin-bottom: 48px;
+      transition: color 0.2s;
+    }
+
+    .back-link:hover { color: var(--green); border: none; }
+    .back-link::before { content: '←'; font-family: sans-serif; }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <a href="https://squamatracker.fr" class="back-link">Squama Tracker</a>
+
+    <header>
+      <span class="logo-text">Squama Tracker — Studio DevLoq</span>
+      <h1>Politique de confidentialité</h1>
+      <p class="meta">Dernière mise à jour : <span>25 mars 2026</span></p>
+    </header>
+
+    <section>
+      <h2>1. Qui sommes-nous ?</h2>
+      <p>Squama Tracker est une application mobile iOS de suivi des reptiles développée par <strong>Hugo Loques</strong>, micro-entrepreneur sous l'enseigne <strong>Studio DevLoq</strong>.<br>
+      Contact : <a href="mailto:squamatrackersupport@gmail.com">squamatrackersupport@gmail.com</a><br>
+      Site web : <a href="https://www.squamatracker.fr">www.squamatracker.fr</a> — <a href="https://www.squamatracker.com">www.squamatracker.com</a></p>
+    </section>
+
+    <section>
+      <h2>2. Données collectées</h2>
+      <p>Squama Tracker a été conçu dans le respect de votre vie privée. Voici les données traitées :</p>
+      <ul>
+        <li><strong>Données de vos animaux</strong> : noms, espèces, poids, mensurations, photos, historique des repas, mues et événements. Ces données sont saisies par vous et stockées sur <strong>votre iCloud personnel</strong>. Nous n'y avons pas accès.</li>
+        <li><strong>Photos</strong> : les photos de vos reptiles sont uploadées sur <strong>Firebase Storage</strong> (Google), liées à un identifiant anonyme. Elles ne sont pas associées à votre identité.</li>
+        <li><strong>Identifiant anonyme</strong> : un identifiant unique généré aléatoirement est créé localement pour organiser vos photos. Il ne contient aucune information personnelle.</li>
+        <li><strong>Données d'abonnement</strong> : gérées par <strong>RevenueCat</strong> et <strong>Apple</strong>. Nous ne voyons jamais vos informations bancaires.</li>
+        <li><strong>Connexion</strong> : l'application utilise <strong>Sign in with Apple</strong>. Nous ne stockons pas votre adresse email Apple.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>3. Pourquoi ces données sont-elles utilisées ?</h2>
+      <ul>
+        <li>Permettre le suivi et la sauvegarde de vos animaux</li>
+        <li>Restaurer vos données en cas de changement d'appareil</li>
+        <li>Gérer votre abonnement premium</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>4. Partage avec des tiers</h2>
+      <p>Nous utilisons les services tiers suivants :</p>
+      <ul>
+        <li><strong>Apple iCloud</strong> – stockage de vos données animaux (<a href="https://www.apple.com/fr/legal/privacy/" target="_blank">politique Apple</a>)</li>
+        <li><strong>Firebase / Google</strong> – stockage des photos (<a href="https://firebase.google.com/support/privacy" target="_blank">politique Firebase</a>)</li>
+        <li><strong>RevenueCat</strong> – gestion des abonnements (<a href="https://www.revenuecat.com/privacy" target="_blank">politique RevenueCat</a>)</li>
+      </ul>
+      <p>Nous ne vendons, ne louons et ne partageons jamais vos données avec des annonceurs ou des tiers à des fins commerciales.</p>
+    </section>
+
+    <section>
+      <h2>5. Sécurité</h2>
+      <p>Vos données animaux restent sur votre iCloud personnel — nous n'y avons pas accès. Les photos sont stockées dans un espace sécurisé Firebase accessible uniquement via un identifiant anonyme.</p>
+    </section>
+
+    <section>
+      <h2>6. Conservation des données</h2>
+      <p>Vos données sont conservées tant que vous utilisez l'application. Si vous supprimez votre compte ou désinstallez l'app, les données locales sont effacées. Vous pouvez nous contacter pour demander la suppression des photos stockées sur Firebase.</p>
+    </section>
+
+    <section>
+      <h2>7. Vos droits (RGPD)</h2>
+      <p>Conformément au Règlement Général sur la Protection des Données (RGPD), vous disposez des droits suivants :</p>
+      <ul>
+        <li>Droit d'accès à vos données</li>
+        <li>Droit de rectification</li>
+        <li>Droit à l'effacement</li>
+        <li>Droit à la portabilité</li>
+      </ul>
+      <p>Pour exercer ces droits, contactez-nous à : <a href="mailto:squamatrackersupport@gmail.com">squamatrackersupport@gmail.com</a></p>
+    </section>
+
+    <section>
+      <h2>8. Enfants</h2>
+      <p>Squama Tracker n'est pas destiné aux enfants de moins de 13 ans. Nous ne collectons pas sciemment de données personnelles concernant des enfants. Si vous êtes parent ou tuteur et pensez que votre enfant nous a fourni des données, contactez-nous à <a href="mailto:squamatrackersupport@gmail.com">squamatrackersupport@gmail.com</a> afin que nous puissions les supprimer.</p>
+    </section>
+
+    <section>
+      <h2>9. Modifications de cette politique</h2>
+      <p>Nous nous réservons le droit de modifier cette politique de confidentialité à tout moment. Toute modification sera publiée sur cette page avec une date de mise à jour. Nous vous encourageons à consulter régulièrement cette page.</p>
+    </section>
+
+    <section>
+      <h2>10. Contact</h2>
+      <ul>
+        <li><strong>Email :</strong> <a href="mailto:squamatrackersupport@gmail.com">squamatrackersupport@gmail.com</a></li>
+        <li><strong>Éditeur :</strong> Hugo Loques — Studio DevLoq</li>
+        <li><strong>Site :</strong> <a href="https://www.squamatracker.fr">www.squamatracker.fr</a></li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>© 2026 Studio DevLoq — Tous droits réservés</p>
+      <br/>
+      <a href="/cgu.html">Conditions Générales d'Utilisation</a>
+      &nbsp;·&nbsp;
+      <a href="https://squamatracker.fr">squamatracker.fr</a>
+    </footer>
+
+  </div>
+</body>
+</html>

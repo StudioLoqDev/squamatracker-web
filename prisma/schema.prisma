@@ -1,0 +1,88 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+model VipCode {
+  id        String    @id @default(cuid())
+  code      String    @unique
+  isActive  Boolean   @default(true)
+  note      String?
+  usedAt    DateTime?
+  createdAt DateTime  @default(now())
+
+  @@index([isActive])
+}
+
+model Idea {
+  id        String   @id @default(cuid())
+  name      String?
+  email     String?
+  message   String
+  category  String?
+  isRead    Boolean  @default(false)
+  createdAt DateTime @default(now())
+
+  @@index([isRead])
+  @@index([createdAt])
+}
+
+model ContactMessage {
+  id        String   @id @default(cuid())
+  name      String
+  email     String
+  message   String
+  isRead    Boolean  @default(false)
+  createdAt DateTime @default(now())
+
+  @@index([isRead])
+  @@index([createdAt])
+}
+
+model SiteContent {
+  id        String   @id @default(cuid())
+  key       String   @unique
+  value     String   @db.Text
+  updatedAt DateTime @updatedAt
+}
+
+model WaitlistEntry {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  createdAt DateTime @default(now())
+
+  @@index([createdAt])
+}
+
+model ChangelogEntry {
+  id          String   @id @default(cuid())
+  version     String
+  title       String
+  content     String   @db.Text
+  type        String   @default("feature")
+  isPublished Boolean  @default(true)
+  publishedAt DateTime @default(now())
+  createdAt   DateTime @default(now())
+
+  @@index([isPublished, publishedAt])
+}
+
+model RoadmapItem {
+  id          String   @id @default(cuid())
+  status      String   @default("planned")
+  quarter     String
+  title       String
+  description String   @db.Text
+  icon        String   @default("🔮")
+  order       Int      @default(0)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([order])
+  @@index([status])
+}

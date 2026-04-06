@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Conditions Générales d'Utilisation – Squama Tracker</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Rajdhani:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --green: #00e5a0;
+      --green-dim: rgba(0, 229, 160, 0.12);
+      --green-border: rgba(0, 229, 160, 0.25);
+      --bg: #0a0f0d;
+      --surface: #0f1a14;
+      --text: #c8d8d0;
+      --text-dim: #6a8a7a;
+      --white: #e8f4ef;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Rajdhani', sans-serif;
+      font-weight: 400;
+      line-height: 1.8;
+      min-height: 100vh;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 60% 40% at 80% 10%, rgba(0,229,160,0.04) 0%, transparent 60%),
+        radial-gradient(ellipse 40% 60% at 10% 80%, rgba(0,229,160,0.03) 0%, transparent 60%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .container {
+      position: relative;
+      z-index: 1;
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 60px 24px 100px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 64px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid var(--green-border);
+    }
+
+    .logo-text {
+      font-family: 'Cinzel', serif;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.35em;
+      color: var(--green);
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      display: block;
+    }
+
+    h1 {
+      font-family: 'Cinzel', serif;
+      font-size: clamp(20px, 4vw, 30px);
+      font-weight: 400;
+      color: var(--white);
+      letter-spacing: 0.05em;
+      margin-bottom: 16px;
+    }
+
+    .meta {
+      font-size: 13px;
+      color: var(--text-dim);
+      letter-spacing: 0.06em;
+    }
+
+    .meta span { color: var(--green); }
+
+    section { margin-bottom: 52px; }
+
+    h2 {
+      font-family: 'Cinzel', serif;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--green);
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--green-border);
+    }
+
+    p {
+      font-size: 15px;
+      color: var(--text);
+      margin-bottom: 14px;
+    }
+
+    ul { list-style: none; margin-bottom: 14px; }
+
+    ul li {
+      font-size: 15px;
+      color: var(--text);
+      padding: 6px 0 6px 20px;
+      position: relative;
+    }
+
+    ul li::before {
+      content: '›';
+      position: absolute;
+      left: 0;
+      color: var(--green);
+      font-size: 18px;
+      line-height: 1.4;
+    }
+
+    .highlight-box {
+      background: var(--green-dim);
+      border: 1px solid var(--green-border);
+      border-left: 3px solid var(--green);
+      border-radius: 4px;
+      padding: 20px 24px;
+      margin: 20px 0;
+    }
+
+    .highlight-box p { margin-bottom: 0; font-size: 14px; }
+
+    a {
+      color: var(--green);
+      text-decoration: none;
+      border-bottom: 1px solid var(--green-border);
+      transition: border-color 0.2s;
+    }
+
+    a:hover { border-color: var(--green); }
+
+    footer {
+      margin-top: 80px;
+      padding-top: 32px;
+      border-top: 1px solid var(--green-border);
+      text-align: center;
+    }
+
+    footer p { font-size: 12px; color: var(--text-dim); letter-spacing: 0.08em; }
+    footer a { color: var(--green); font-size: 12px; }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-family: 'Cinzel', serif;
+      font-size: 11px;
+      letter-spacing: 0.2em;
+      color: var(--text-dim);
+      text-decoration: none;
+      border: none;
+      margin-bottom: 48px;
+      transition: color 0.2s;
+    }
+
+    .back-link:hover { color: var(--green); border: none; }
+    .back-link::before { content: '←'; font-family: sans-serif; }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <a href="https://squamatracker.fr" class="back-link">Squama Tracker</a>
+
+    <header>
+      <span class="logo-text">Squama Tracker — Studio DevLoq</span>
+      <h1>Conditions Générales d'Utilisation</h1>
+      <p class="meta">Dernière mise à jour : <span>27 mars 2026</span></p>
+    </header>
+
+    <section>
+      <h2>1. Présentation</h2>
+      <p>Les présentes Conditions Générales d'Utilisation (« CGU ») régissent l'utilisation de l'application mobile <strong>Squama Tracker</strong>, éditée par Hugo Loques, micro-entrepreneur sous l'enseigne <strong>Studio DevLoq</strong>, domicilié au 47 rue Vivienne, 75002 Paris, France.</p>
+      <p>En téléchargeant ou en utilisant l'Application, vous acceptez sans réserve les présentes CGU. Si vous n'acceptez pas ces conditions, veuillez ne pas utiliser l'Application.</p>
+    </section>
+
+    <section>
+      <h2>2. Description du service</h2>
+      <p>Squama Tracker est une application iOS permettant aux propriétaires de reptiles de suivre et gérer leurs animaux : repas, mues, soins, pesées et autres événements liés à l'élevage de reptiles.</p>
+      <p>L'Application est disponible en deux versions :</p>
+      <ul>
+        <li><strong>Version gratuite</strong> : accès aux fonctionnalités de base, avec des limitations sur le nombre de reptiles ou d'entrées.</li>
+        <li><strong>Version Premium</strong> : accès illimité à l'ensemble des fonctionnalités via un abonnement auto-renouvelable souscrit via l'App Store d'Apple.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>3. Abonnement Premium</h2>
+      <p>L'accès aux fonctionnalités Premium est conditionné à la souscription d'un abonnement payant, géré exclusivement via les achats intégrés (In-App Purchases) de l'App Store d'Apple.</p>
+      <div class="highlight-box">
+        <p>Le paiement est débité sur votre compte Apple ID à la confirmation de l'achat. L'abonnement se renouvelle automatiquement sauf désactivation au moins 24h avant la fin de la période en cours.</p>
+      </div>
+      <p>Les conditions tarifaires en vigueur sont affichées dans l'Application au moment de la souscription. Studio DevLoq se réserve le droit de modifier les tarifs, avec préavis communiqué à l'utilisateur.</p>
+      <p>La gestion de l'abonnement (résiliation, modification) s'effectue depuis les Réglages de votre appareil iOS → Apple ID → Abonnements.</p>
+      <p>Conformément à la politique d'Apple, aucun remboursement n'est accordé pour les périodes d'abonnement entamées, sauf demande formulée directement auprès d'Apple.</p>
+    </section>
+
+    <section>
+      <h2>4. Compte utilisateur</h2>
+      <p>L'utilisation de l'Application peut nécessiter la création d'un compte via Firebase Authentication. Vous êtes responsable de la confidentialité de vos identifiants et de toute activité réalisée depuis votre compte.</p>
+      <p>Studio DevLoq se réserve le droit de suspendre ou supprimer tout compte en cas de violation des présentes CGU.</p>
+    </section>
+
+    <section>
+      <h2>5. Propriété intellectuelle</h2>
+      <p>L'ensemble des éléments de l'Application (code source, design, marque, logo, textes, icônes) sont la propriété exclusive de Studio DevLoq et sont protégés par les lois françaises et internationales relatives à la propriété intellectuelle.</p>
+      <p>Toute reproduction, distribution ou utilisation non autorisée est strictement interdite.</p>
+    </section>
+
+    <section>
+      <h2>6. Données personnelles</h2>
+      <p>La collecte et le traitement de vos données personnelles sont encadrés par notre Politique de Confidentialité, accessible à l'adresse :</p>
+      <p><a href="https://squamatracker.fr/privacy-policy" target="_blank">squamatracker.fr/privacy-policy</a></p>
+      <p>Conformément au RGPD, vous disposez d'un droit d'accès, de rectification, de suppression et de portabilité de vos données. Pour exercer ces droits : <a href="mailto:squamatrackersupport@gmail.com">squamatrackersupport@gmail.com</a></p>
+    </section>
+
+    <section>
+      <h2>7. Limitation de responsabilité</h2>
+      <p>L'Application est fournie « en l'état ». Studio DevLoq ne saurait être tenu responsable :</p>
+      <ul>
+        <li>Des interruptions de service liées à des maintenances ou incidents techniques.</li>
+        <li>De la perte de données consécutive à un dysfonctionnement de l'appareil ou de l'Application.</li>
+        <li>Des décisions prises par l'utilisateur sur la base des informations enregistrées dans l'Application.</li>
+        <li>De tout dommage indirect résultant de l'utilisation ou de l'impossibilité d'utiliser l'Application.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>8. Modifications des CGU</h2>
+      <p>Studio DevLoq se réserve le droit de modifier les présentes CGU à tout moment. Les utilisateurs seront informés de toute modification substantielle via l'Application ou par email. La poursuite de l'utilisation vaut acceptation des nouvelles CGU.</p>
+    </section>
+
+    <section>
+      <h2>9. Résiliation</h2>
+      <p>Vous pouvez cesser d'utiliser l'Application à tout moment. Studio DevLoq peut suspendre ou résilier votre accès en cas de non-respect des présentes CGU, sans préavis ni indemnité.</p>
+    </section>
+
+    <section>
+      <h2>10. Droit applicable</h2>
+      <p>Les présentes CGU sont soumises au droit français. Tout litige relatif à leur interprétation ou exécution sera soumis à la compétence exclusive des tribunaux français.</p>
+    </section>
+
+    <section>
+      <h2>11. Contact</h2>
+      <ul>
+        <li><strong>Email :</strong> <a href="mailto:squamatrackersupport@gmail.com">squamatrackersupport@gmail.com</a></li>
+        <li><strong>Éditeur :</strong> Hugo Loques — Studio DevLoq</li>
+        <li><strong>Adresse :</strong> 47 rue Vivienne, 75002 Paris, France</li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>© 2026 Studio DevLoq — Tous droits réservés</p>
+      <br/>
+      <a href="https://squamatracker.fr/privacy-policy">Politique de confidentialité</a>
+      &nbsp;·&nbsp;
+      <a href="https://squamatracker.fr">squamatracker.fr</a>
+    </footer>
+
+  </div>
+</body>
+</html>
